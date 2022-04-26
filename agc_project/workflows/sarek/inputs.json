@@ -1,0 +1,5 @@
+{
+  "input": "s3://roda3/input-sample2_v2.tsv",
+  "outdir": "s3://roda3/results_sample2_v2",
+  "tools": "Mutect2,snpEff,VEP"
+}

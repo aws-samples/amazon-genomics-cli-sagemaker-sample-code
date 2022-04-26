@@ -1,0 +1,2 @@
+SRR7890831	XX	0	SAMPLE_01	1	s3://roda3/fetchngs_fastq_2/fastq/SRX4728537_SRR7890831_1.fastq.gz	s3://roda3/fetchngs_fastq_2/fastq/SRX4728537_SRR7890831_2.fastq.gz
+SRR7890830	XX	0	SAMPLE_01	1	s3://roda3/fetchngs_fastq_2/fastq/SRX4728538_SRR7890830_1.fastq.gz	s3://roda3/fetchngs_fastq_2/fastq/SRX4728538_SRR7890830_2.fastq.gz

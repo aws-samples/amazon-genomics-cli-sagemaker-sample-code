@@ -1,0 +1,4 @@
+{
+  "input": "s3://roda3/ids.txt",
+  "outdir": "s3://roda3/fetchngs_fastq_2"
+}

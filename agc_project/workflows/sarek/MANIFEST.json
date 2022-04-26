@@ -1,0 +1,8 @@
+{
+  "mainWorkflowURL": "https://github.com/ArlindNocaj/sarek.git",
+  "inputFileURLs": [
+    "inputs.json"
+  ],
+  "engineOptions": "-resume"
+
+}

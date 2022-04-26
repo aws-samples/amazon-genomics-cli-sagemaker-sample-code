@@ -1,0 +1,6 @@
+{
+  "mainWorkflowURL": "https://github.com/ArlindNocaj/fetchngs.git",
+  "inputFileURLs": [
+    "inputs.json"
+  ]
+}

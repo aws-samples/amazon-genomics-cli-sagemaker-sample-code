@@ -1,0 +1,90 @@
+---
+
+#Workflows to convert sra to fastq and run nf-core sarek workflow
+
+name: NFCorePopular
+schemaVersion: 1
+workflows:
+  fetchngs:
+    type:
+      language: nextflow
+      version: 1.0
+    sourceURL: workflows/fetchngs
+  sarek:
+    type:
+      language: nextflow
+      version: 1.0
+    sourceURL: workflows/sarek
+data:
+#  - location: s3://1000genomes
+  - location: s3://seq2-data
+    readOnly: true
+  - location: s3://ngi-igenomes
+    readOnly: true
+  - location: s3://encode-public
+    readOnly: true
+  - location: s3://roda3
+contexts:
+  bigMemCtx:
+    instanceTypes:                     # Standard types plus r5.8xlarge due to memory requirements of some workflows like sarek
+      - "c5.large"
+      - "c5.xlarge"
+      - "c5.2xlarge"
+      - "c5.4xlarge"
+      - "c5n.large"
+      - "c5n.xlarge"
+      - "c5n.2xlarge"
+      - "c5n.4xlarge"
+      - "m5.large"
+      - "m5.xlarge"
+      - "m5.2xlarge"
+      - "m5.4xlarge"
+      - "m5n.large"
+      - "m5n.xlarge"
+      - "m5n.2xlarge"
+      - "m5n.4xlarge"
+      - "r5.large"
+      - "r5.xlarge"
+      - "r5.2xlarge"
+      - "r5.4xlarge"
+      - "r5.8xlarge"
+      - "r5n.large"
+      - "r5n.xlarge"
+      - "r5n.2xlarge"
+      - "r5n.4xlarge"
+      - "r5n.8xlarge"
+    engines:
+      - type: nextflow
+        engine: nextflow
+  bigMemCtxSpot:
+    requestSpotInstances: true
+    instanceTypes:             
+      - "c5.large"
+      - "c5.xlarge"
+      - "c5.2xlarge"
+      - "c5.4xlarge"
+      - "c5n.large"
+      - "c5n.xlarge"
+      - "c5n.2xlarge"
+      - "c5n.4xlarge"
+      - "m5.large"
+      - "m5.xlarge"
+      - "m5.2xlarge"
+      - "m5.4xlarge"
+      - "m5n.large"
+      - "m5n.xlarge"
+      - "m5n.2xlarge"
+      - "m5n.4xlarge"
+      - "r5.large"
+      - "r5.xlarge"
+      - "r5.2xlarge"
+      - "r5.4xlarge"
+      - "r5.8xlarge"
+      - "r5n.large"
+      - "r5n.xlarge"
+      - "r5n.2xlarge"
+      - "r5n.4xlarge"
+      - "r5n.8xlarge"
+    engines:
+      - type: nextflow
+        engine: nextflow
