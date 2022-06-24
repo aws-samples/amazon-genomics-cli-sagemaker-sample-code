@@ -1,5 +1,5 @@
 {
-  "mainWorkflowURL": "https://github.com/nf-core/fetchngs/tree/e1cb675c04392bcc799cc58bc19120904828b01f",
+  "mainWorkflowURL": "https://github.com/nf-core/sarek.git",
   "inputFileURLs": [
     "inputs.json"
   ],
