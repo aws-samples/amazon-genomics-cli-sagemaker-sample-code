@@ -17,12 +17,10 @@ workflows:
     sourceURL: workflows/sarek
 data:
 #  - location: s3://1000genomes
-  - location: s3://seq2-data
-    readOnly: true
-  - location: s3://ngi-igenomes
-    readOnly: true
-  - location: s3://encode-public
-    readOnly: true
+# - location: s3://seq2-data
+#  readOnly: true
+#  - location: s3://ngi-igenomes
+#  readOnly: true
   - location: s3://roda3
 contexts:
   bigMemCtx:
